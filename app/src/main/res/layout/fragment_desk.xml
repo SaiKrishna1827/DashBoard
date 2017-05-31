@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F7F2"
+        >
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/slider"
+            android:layout_toRightOf="@+id/custom_indicator"
+            android:layout_toEndOf="@+id/custom_indicator"
+            android:id="@+id/resources"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Resources"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView2"
+                android:weightSum="4"
+                android:elevation="5dp"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="fill_vertical"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/notes"
+                    android:id="@+id/notesBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    android:text="\nNotes"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="fill_vertical"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/qb"
+                    android:id="@+id/qbBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    android:text="\nQuestions"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="fill_vertical"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/testseries"
+                    android:id="@+id/testSeriesBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:text="\nTests"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="fill_vertical"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/videolectures"
+                    android:id="@+id/videosBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:text="\nVideos"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="28dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/resources"
+            android:layout_toRightOf="@+id/custom_indicator"
+            android:layout_toEndOf="@+id/custom_indicator"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Utilities"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="5dp"
+                android:layout_below="@+id/textView3"
+                android:weightSum="4"
+                >
+
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/stickies"
+                    android:id="@+id/stickiesBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:text="\nStickies"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/bookmarks"
+                    android:id="@+id/bookmarksBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="8dp"
+                    android:text="\nBookmarks"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/todo"
+                    android:id="@+id/todoBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:text="\nTo-Do List"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:background="#ffffff"
+                    android:drawableTop="@drawable/planner"
+                    android:id="@+id/plannerBtn"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:text="\nPlanner"
+                    android:textSize="10dp"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:textColor="#8F8F8F" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

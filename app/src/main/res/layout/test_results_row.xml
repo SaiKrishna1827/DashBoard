@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:elevation="3dp"
+        android:id="@+id/TRCardView"
+        card_view:cardCornerRadius="0dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/chem_subject"
+                android:id="@+id/chapImg"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Test Name"
+                android:id="@+id/testName"
+                android:layout_toRightOf="@+id/chapImg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="13dp"
+                android:maxLines="3"
+                android:singleLine="false"
+                android:layout_toEndOf="@+id/chapImg"
+                android:layout_toStartOf="@+id/percentCont"
+                android:layout_toLeftOf="@+id/percentCont" />
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:id="@+id/targetIcon"
+                android:src="@drawable/score"
+                android:layout_marginTop="15dp"
+                android:tint="#F74B3D"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/chapImg"
+                android:layout_toRightOf="@+id/chapImg"
+                android:layout_below="@+id/testName"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50/124"
+                android:id="@+id/score"
+                android:layout_toEndOf="@+id/targetIcon"
+                android:layout_toRightOf="@+id/targetIcon"
+                android:layout_below="@+id/testName"
+                android:textSize="12dp"
+                android:textColor="#F70E0E"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:tint="#6D54A9"
+                android:id="@+id/examdateimg"
+                android:layout_toEndOf="@+id/score"
+                android:layout_below="@+id/testName"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/examdate"
+                android:layout_toRightOf="@+id/score" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-01-24 12:03"
+                android:id="@+id/examdate"
+                android:layout_toEndOf="@+id/examdateimg"
+                android:layout_toRightOf="@+id/examdateimg"
+                android:layout_toLeftOf="@+id/percentCont"
+                android:layout_toStartOf="@+id/percentCont"
+                android:layout_below="@+id/testName"
+                android:textSize="12dp"
+                android:textColor="#6D54A9"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                tools:ignore="RtlHardcoded" />
+
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/percentCont"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                >
+
+                <com.sample.dashboard.CircleDisplay
+                    android:id="@+id/circleResultDisplay"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

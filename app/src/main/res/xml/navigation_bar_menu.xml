@@ -1,0 +1,25 @@
+<tabs>
+    <tab
+        id="@+id/desk"
+        icon="@drawable/desk"
+        title="Desk"
+        activeColor="@color/colorAccent"
+        />
+    <tab
+        id="@+id/progress"
+        icon="@drawable/progress"
+        title="Progress"
+        activeColor="@color/colorAccent" />
+
+    <tab
+        id="@+id/performance"
+        icon="@drawable/guidance"
+        title="Performance"
+        activeColor="@color/colorAccent" />
+
+    <tab
+        id="@+id/test_results"
+        icon="@drawable/testresults"
+        title="Test Results"
+        activeColor="@color/colorAccent"/>
+</tabs>
